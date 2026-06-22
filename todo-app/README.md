@@ -38,9 +38,9 @@ The project demonstrates practical React development concepts including state ma
 | Internship | SkillCraft Technology |
 | Track | Web Development |
 | Track Code | WD |
-| Task Number | Task 03 |
+| Task Number | Task 04|
 | Task Name | To-Do Planner Application |
-| Repository Name | SCT_WD_3 |
+| Repository Name | SCT_WD_4 |
 | Intern ID | SCT/JUNE26/2530 |
 | Project Name | Daybook |
 
@@ -154,7 +154,7 @@ git clone https://github.com/karthikchintanippu/SCT_WD_4.git
 
 ### Navigate to Project
 ```bash
-cd SCT_WD_3
+cd SCT_WD_4
 ```
 
 ### Install Dependencies
