@@ -1,56 +1,61 @@
 # Daybook — To-Do Planner
 
 ![SkillCraft](https://img.shields.io/badge/SkillCraft-Technology-2C2C2C?style=for-the-badge)
-![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![Vite](https://img.shields.io/badge/Vite-8-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white)
 
-A basic to-do app built with **Vite + React**, **React Router**, **Tailwind CSS**, and **CSS Modules**. Add tasks, organize them by due date, mark them complete, edit them, and set a date and time for each.
+A modern, responsive, and interactive To-Do Planner built using **React**, **Vite**, **JavaScript**, and **Tailwind CSS** as part of the SkillCraft Technology Web Development Internship — Task 03.
+
+Daybook provides a clean task management experience with task creation, editing, organization by lists, due date tracking, priority management, and persistent storage using localStorage.
 
 ---
 
-## Stack
+## Overview
 
-- **Vite** — dev server and build tool  
-- **React 18** — UI  
-- **React Router v6** — routes for task list and create/edit screens  
-- **Tailwind CSS** — layout, spacing, utility styling  
-- **CSS Modules** — custom UI components (checkboxes, task rows, forms)  
-- **localStorage** — persistent data storage (no backend required)
+Daybook is a productivity-focused task management application designed to help users organize their daily work efficiently.
+
+The application enables users to:
+
+- Create and manage tasks
+- Organize tasks into multiple lists
+- Set due dates and times
+- Assign priority levels
+- Mark tasks as complete
+- Edit and delete tasks
+- View grouped task sections (Today, Tomorrow, etc.)
+- Persist data using localStorage
+
+The project demonstrates practical React development concepts including state management, reusable components, custom hooks, CRUD operations, routing, and responsive UI design.
 
 ---
 
-## Getting started
+## Internship Details
 
-```bash
-npm install
-npm run dev
-```
-
-Open the URL Vite prints (usually `http://localhost:5173`).
-
-To build for production:
-
-```bash
-npm run build
-npm run preview
-```
+| Field | Details |
+|------|--------|
+| Internship | SkillCraft Technology |
+| Track | Web Development |
+| Track Code | WD |
+| Task Number | Task 03 |
+| Task Name | To-Do Planner Application |
+| Repository Name | SCT_WD_3 |
+| Intern ID | SCT/JUNE26/2530 |
+| Project Name | Daybook |
 
 ---
 
 ## Features
 
 ### Task Management
-
-- Add tasks using quick-add or full form
+- Add new tasks
 - Edit existing tasks
 - Delete tasks
 - Mark tasks as complete
 
-### Organization
-
-- Multiple lists (Work, Personal, Shopping, custom lists)
+### Organization System
+- Multiple lists (Work, Personal, Shopping, Custom lists)
 - Move tasks between lists
 - Automatic grouping by due date:
   - Overdue
@@ -61,131 +66,137 @@ npm run preview
   - No date
 
 ### Sorting Options
-
-- By Date (with smart grouping)
-- By Priority (High → Low)
-- By Status (Open → Completed)
+- Sort by Date
+- Sort by Priority
+- Sort by Status
 
 ### Task Details
-
-Each task supports:
-
+Each task includes:
 - Title
 - Notes
 - Due date & time
-- Priority (High / Medium / Low)
+- Priority level (High / Medium / Low)
 - List assignment
 
-### Persistence
-
-- All tasks stored in **localStorage**
-- Data persists after refresh
+### Data Persistence
+- Uses localStorage
+- Data remains after refresh
 - No backend required
 
 ---
 
-## Project structure
+## Tech Stack
+
+| Technology | Purpose |
+|------------|---------|
+| React.js | Frontend Library |
+| Vite | Development & Build Tool |
+| JavaScript | Application Logic |
+| Tailwind CSS | Utility-First Styling |
+| React Router DOM | Client-Side Routing |
+| HTML5 | Structure |
+| CSS3 | Styling Support |
+
+---
+
+## Folder Structure
 
 ```text
-src/
-  utils/
-    dates.js              # Date grouping helpers (Today, Tomorrow, etc.)
-  store/
-    taskLogic.js          # Task CRUD logic
-    listLogic.js          # List CRUD logic
-    sortLogic.js          # Sorting logic
-    useTasks.js           # Tasks state + localStorage hook
-    useLists.js           # Lists state + localStorage hook
-  components/
-    TaskItem.jsx
-    TaskItem.module.css
-    TaskSection.jsx
-    ListFilterBar.jsx
-    ListFilterBar.module.css
-    SortMenu.jsx
-    SortMenu.module.css
-    QuickAdd.jsx
-    QuickAdd.module.css
-    EmptyState.jsx
-    Button.jsx
-  pages/
-    ListPage.jsx
-    ListPage.module.css
-    TaskPage.jsx
-    TaskPage.module.css
-  App.jsx
-  main.jsx
-  index.css
+SCT_WD_3/
+│
+├── index.html
+├── vite.config.js
+├── package.json
+├── eslint.config.js
+├── .gitignore
+│
+├── public/
+│   └── favicon.svg
+│
+└── src/
+    │
+    ├── main.jsx
+    ├── App.jsx
+    ├── index.css
+    │
+    ├── utils/
+    │   └── dates.js
+    │
+    ├── store/
+    │   ├── taskLogic.js
+    │   ├── listLogic.js
+    │   ├── sortLogic.js
+    │   ├── useTasks.js
+    │   └── useLists.js
+    │
+    ├── components/
+    │   ├── TaskItem.jsx
+    │   ├── TaskSection.jsx
+    │   ├── ListFilterBar.jsx
+    │   ├── SortMenu.jsx
+    │   ├── QuickAdd.jsx
+    │   ├── EmptyState.jsx
+    │   └── Button.jsx
+    │
+    └── pages/
+        ├── ListPage.jsx
+        └── TaskPage.jsx
 ```
 
 ---
 
-## Architecture Notes
+## Installation & Setup
 
-- Pure logic files (`utils/`, `store/`) are framework-free and testable
-- Hooks (`useTasks`, `useLists`) handle **state + persistence**
-- UI components remain stateless where possible
-- Tasks follow structure:
-
-```js
-{
-  id,
-  title,
-  notes,
-  dueDate,
-  dueTime,
-  listId,
-  priority,
-  completed,
-  createdAt
-}
+### Clone Repository
+```bash
+git clone https://github.com/karthikchintanippu/SCT_WD_3.git
 ```
 
-- Lists follow structure:
+### Navigate to Project
+```bash
+cd SCT_WD_3
+```
 
-```js
-{
-  id,
-  name,
-  color
-}
+### Install Dependencies
+```bash
+npm install
+```
+
+### Start Development Server
+```bash
+npm run dev
+```
+
+### Open Application
+```text
+http://localhost:5173/
 ```
 
 ---
 
-## Routes
+## Usage Guide
 
-| Path | Page |
-|------|------|
-| `/` | Task List (dashboard) |
-| `/task/new` | Create Task |
-| `/task/:id` | Edit Task |
-
----
-
-## Design Notes
-
-Daybook is designed like a **real paper planner**:
-
-- Warm, notebook-style UI
-- Clear date-based grouping
-- Priority indicators for urgency
-- List-based organization with color tags
-- Minimal but functional layout
-- Focus on readability and quick task entry
+1. Launch the application
+2. Create a new task
+3. Assign list, priority, and due date
+4. Organize tasks by category
+5. Mark tasks as complete
+6. Edit or delete tasks when needed
+7. View grouped task sections
+8. Manage productivity efficiently
 
 ---
 
 ## Learning Outcomes
 
-- React state architecture
-- Custom hooks design
-- CRUD operations in frontend apps
-- localStorage persistence
-- Component-driven development
+- React state management
+- Custom hooks
+- CRUD operations
+- Component-based architecture
 - Routing with React Router
-- Clean UI/UX structuring
-- Modular CSS architecture
+- localStorage persistence
+- UI/UX design principles
+- Modular code structure
 
 ---
 
