@@ -6,7 +6,7 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white)
 
-A modern, responsive, and interactive To-Do Planner built using **React**, **Vite**, **JavaScript**, and **Tailwind CSS** as part of the SkillCraft Technology Web Development Internship — Task 03.
+A modern, responsive, and interactive To-Do Planner built using **React**, **Vite**, **JavaScript**, and **Tailwind CSS** as part of the SkillCraft Technology Web Development Internship — Task 04.
 
 Daybook provides a clean task management experience with task creation, editing, organization by lists, due date tracking, priority management, and persistent storage using localStorage.
 
@@ -149,7 +149,7 @@ SCT_WD_3/
 
 ### Clone Repository
 ```bash
-git clone https://github.com/karthikchintanippu/SCT_WD_3.git
+git clone https://github.com/karthikchintanippu/SCT_WD_4.git
 ```
 
 ### Navigate to Project
@@ -202,7 +202,7 @@ http://localhost:5173/
 
 ## Repository
 
-Repository: https://github.com/karthikchintanippu/SCT_WD_3
+Repository: https://github.com/karthikchintanippu/SCT_WD_4
 
 ---
 
@@ -216,10 +216,10 @@ GitHub: https://github.com/karthikchintanippu
 
 ## Acknowledgement
 
-This project was developed as part of the SkillCraft Technology Web Development Internship (Task 03).
+This project was developed as part of the SkillCraft Technology Web Development Internship (Task 04).
 
 ---
 
 ## Footer Credit
 
-Built by CHINTANIPPU KARTHIK · SkillCraft Technology Web Development Task 03
+Built by CHINTANIPPU KARTHIK · SkillCraft Technology Web Development Task 04
