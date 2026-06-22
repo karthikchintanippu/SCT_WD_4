@@ -1,0 +1,33 @@
+.quickAdd {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #FFFFFF;
+  border: 1px solid #E8E1D3;
+  border-radius: 12px;
+  padding: 12px 16px;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.quickAdd:focus-within {
+  border-color: #C1652F;
+  box-shadow: 0 0 0 3px #C1652F1A;
+}
+
+.input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+}
+
+.input::placeholder {
+  color: #A39C8E;
+}
+
+.plusIcon {
+  font-size: 1.2rem;
+  line-height: 1;
+  color: #C1652F;
+}

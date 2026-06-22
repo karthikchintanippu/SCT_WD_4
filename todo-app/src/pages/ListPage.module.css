@@ -1,0 +1,19 @@
+.page {
+  min-height: 100vh;
+}
+
+.header {
+  position: relative;
+  padding-bottom: 18px;
+  margin-bottom: 24px;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #E8E1D3;
+}

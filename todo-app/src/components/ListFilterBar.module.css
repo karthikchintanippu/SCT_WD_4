@@ -1,0 +1,72 @@
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 2px;
+  scrollbar-width: none;
+}
+
+.bar::-webkit-scrollbar {
+  display: none;
+}
+
+.pill {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  padding: 7px 14px;
+  border-radius: 999px;
+  border: 1px solid #E8E1D3;
+  background: #FFFFFF;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #766F64;
+  transition: border-color 0.15s ease, color 0.15s ease, background-color 0.15s ease;
+  white-space: nowrap;
+}
+
+.pill:hover {
+  border-color: #C9C1AF;
+}
+
+.pillActive {
+  background: #2A2826;
+  border-color: #2A2826;
+  color: #FAF7F0;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.addPill {
+  border-style: dashed;
+  color: #C1652F;
+}
+
+.addPill:hover {
+  border-color: #C1652F;
+  color: #C1652F;
+}
+
+.newListForm {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.newListInput {
+  width: 110px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid #C1652F;
+  background: #FFFFFF;
+  font-size: 0.82rem;
+  outline: none;
+}
